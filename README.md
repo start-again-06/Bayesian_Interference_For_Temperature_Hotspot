@@ -69,7 +69,7 @@ This repository implements **Bayesian Inference, Gaussian Processes, Kalman Filt
 ---
 
 ## Contribution
-Feel free to fork and contribute to improve models, visualizations, or performance! 🛠️  
+Feel free to fork and contribute to improve models, visualizations, or performance!   
 
 ---
 
