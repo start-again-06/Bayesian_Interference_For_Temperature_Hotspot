@@ -1,75 +1,77 @@
-🔥 Temperature Hotspot Detection & Tracking
+# Temperature Hotspot Detection & Tracking
 
-📌 Overview
+---
 
-This repository contains implementations of Bayesian Inference, Gaussian Processes, Kalman Filters, and Particle Filters for detecting and tracking temperature hotspots over time and space. The techniques are applied to simulated sensor data. 📊
+## System Overview
+This repository implements **Bayesian Inference, Gaussian Processes, Kalman Filters, and Particle Filters** for detecting and tracking temperature hotspots over time and space. The methods are applied to simulated sensor data to identify, estimate, and track hotspot dynamics.
 
-🚀 Features
+---
 
-Bayesian Inference: Probabilistic hotspot detection using prior and likelihood models. 🎯
+## High-Level Architecture
 
-Gaussian Processes: 2D spatial temperature estimation with smooth interpolation. 🌎
+### Detection & Estimation Layer
+- **Bayesian Inference:** Probabilistic hotspot detection using prior and likelihood models  
+- **Gaussian Processes (GPR):** 2D spatial temperature estimation with smooth interpolation  
 
-Kalman Filters: Time-series tracking of hotspots with noise reduction. 📈
+### Time-Series Tracking Layer
+- **Kalman Filters:** Noise reduction and temporal tracking of hotspots  
+- **Particle Filters:** Probabilistic evolution of hotspots over time using Monte Carlo simulations  
 
-Particle Filters: Probabilistic evolution of hotspots over time. 🔄
+### Visualization Layer
+- Interactive plots, density plots, heatmaps, and time-series graphs for analysis and monitoring  
 
-Visualization: Interactive plots and heatmaps for better insight. 🎨
+---
 
-🔧 Installation
+## Execution Flow
 
-📦 Dependencies
+1. **Bayesian Inference**
+   - Assumes hotspots are rare (prior belief)  
+   - Updates posterior probabilities with sensor readings  
+   - Identifies hotspots where posterior mean exceeds a threshold  
 
-Ensure you have the following Python libraries installed:
+2. **Gaussian Process Regression (GPR)**
+   - Models temperature field with RBF kernel  
+   - Predicts temperature over a 2D grid  
+   - Detects hotspots where predicted mean > 35°C  
 
-[pip install numpy matplotlib seaborn scipy scikit-learn pykalman](url)
+3. **Kalman Filter**
+   - Filters noisy time-series sensor data  
+   - Estimates true temperature over time  
+   - Tracks activation and evolution of hotspots  
 
-🏗️ How It Works
+4. **Particle Filter**
+   - Simulates hotspot evolution probabilistically  
+   - Resamples particles based on measurement likelihood  
+   - Predicts future temperature states under uncertainty  
 
-1️⃣ Bayesian Inference for Hotspot Detection
+---
 
-Assumes hotspots are rare (prior belief 🎯).
+## Results & Visualization
+- **Density plots:** Show probability distributions of temperature readings  
+- **Heatmaps:** Highlight hotspot locations and intensities  
+- **Time-series graphs:** Compare raw vs. filtered temperature data  
 
-Uses sensor readings to update posterior probabilities.
+---
 
-Identifies hotspots where posterior mean > threshold.
+## Scalability & Extensibility
+- Can integrate real sensor data for live monitoring  
+- Extendable to multi-dimensional sensor networks  
+- Supports additional probabilistic or machine learning–based tracking methods  
 
-2️⃣ Gaussian Process Regression (GPR)
+---
 
-Models temperature field using Radial Basis Function (RBF) kernel.
+## Applications
+- Environmental monitoring and hotspot detection  
+- Sensor network data analysis  
+- Real-time anomaly detection in temperature fields  
+- Educational demonstrations of Bayesian and probabilistic filtering  
 
-Predicts temperature across a 2D spatial grid.
+---
 
-Detects hotspots where predicted mean > 35°C 🔥.
+## Contribution
+Feel free to fork and contribute to improve models, visualizations, or performance! 🛠️  
 
-3️⃣ Kalman Filter for Time-Series Hotspot Tracking
+---
 
-Processes sensor temperature readings over time ⏳.
-
-Estimates true temperature by filtering noisy observations.
-
-Tracks hotspot activation over time steps.
-
-4️⃣ Particle Filter for Probabilistic Hotspot Evolution
-
-Uses Monte Carlo-based simulation for hotspot tracking 🎲.
-
-Predicts future temperature states based on process and measurement noise.
-
-Resamples particles based on likelihood updates.
-
-📊 Results & Visualization
-
-Each method generates visualizations such as:
-
-Density plots: Show probability distributions of temperature readings.
-
-Heatmaps: Highlight hotspot locations and intensities.
-
-Time-series graphs: Compare raw vs. filtered temperature data.
-
-📢 Contribution
-
-Feel free to fork and contribute to improve the models or visualizations! 🛠️
-
-
+## License
+MIT License. Free to use, modify, and distribute for academic and research purposes.
