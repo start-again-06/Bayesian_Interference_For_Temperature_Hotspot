@@ -51,6 +51,36 @@ This repository implements **Bayesian Inference, Gaussian Processes, Kalman Filt
 - **Heatmaps:** Highlight hotspot locations and intensities  
 - **Time-series graphs:** Compare raw vs. filtered temperature data  
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Bayesian_Inference_3D_Hotspot_Probability_Distribution.png" width="250"/><br/>
+      <b>Bayesian Inference</b><br/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Temperature_Evolution_Frames.png" width="250"/><br/>
+      <b>Temperature Field Evolution</b><br/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Detection_Performance_Analysis.png" width="250"/><br/>
+      <b>Detection Performance (ROC)</b><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Real_time_Temperature_Monitoring_Dashboard.png" width="250"/><br/>
+      <b>Real-time Monitoring Dashboard</b><br/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Comparative_Analysis_Bayesian_Methods_for_Hotspot_Detection.png" width="250"/><br/>
+      <b>Method Performance Comparison</b><br/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/start-again-06/Bayesian_Interference_For_Temperature_Hotspot/blob/7324f497b4fefca7a5d65b6e0e2e2de1c063b5eb/results/Uncertainty_Quantification_in_Temperature.png" width="250"/><br/>
+      <b>Uncertainty Quantification</b><br/>
+    </td>
+  </tr>
+</table>
 ---
 
 ## Scalability & Extensibility
